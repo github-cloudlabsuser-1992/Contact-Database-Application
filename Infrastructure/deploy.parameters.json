@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "webAppName": {
-      "value": "YourWebAppNameHere"
+      "value": "contactmanager1"
     },
     "appServicePlanName": {
-      "value": "YourAppServicePlanNameHere"
+      "value": "ASP-GitHubCopilotChallenges-9b8a"
     },
     "location": {
-      "value": "YourAzureRegionHere"
+      "value": "West US 2"
     }
   }
 }
