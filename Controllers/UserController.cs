@@ -117,6 +117,15 @@ namespace CRUD_application_2.Controllers
                 return HttpNotFound();
             }
         }
+        // GET: User/Search
+        public ActionResult Search(string searchTerm)
+        {
+            // Search for users whose name or email contains the search term
+            var searchResults = userlist.Where(u => u.Name.Contains(searchTerm) || u.Email.Contains(searchTerm)).ToList();
+
+            // Pass the search results to the Search view
+            return View(searchResults);
+        }
 
         // POST: User/Delete/5
         [HttpPost]

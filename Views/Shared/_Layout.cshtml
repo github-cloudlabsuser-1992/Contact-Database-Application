@@ -22,6 +22,12 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("User", "Index", "User")</li>
                 </ul>
+                <form class="navbar-form navbar-right" role="search" method="get" action="@Url.Action("Search", "User")">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="searchTerm" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Search</button>
+                </form>
             </div>
         </div>
     </div>
